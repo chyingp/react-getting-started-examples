@@ -24,9 +24,9 @@
           var result = marked(this.state.result, {sanitize: true});
           return (            
             <div>
-              <h1>与其他库配合</h1>
+              <h1>简易markdown</h1>
               <p>请输入一段markdown文本</p>
-              <textarea ref="markdownText"></textarea>
+              <textarea ref="markdownText" onKeyUp={this.handleKeyUp}></textarea>
               <div>
                 未格式化前：
                 <div>{marked(this.state.result, {sanitize: true})}</div>                
@@ -34,12 +34,11 @@
               <div ref="result">
                 格式化后：
                 <div dangerouslySetInnerHTML={{__html: result}} />
-              </div>
-              <button onClick={this.handleClick}>点击我吧！</button>
+              </div>              
             </div>      
           );
         },
-        handleClick: function(evt){
+        handleKeyUp: function(evt){
           var txt = React.findDOMNode(this.refs.markdownText).value.trim();
           this.setState({result:txt});
         }

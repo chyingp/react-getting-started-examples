@@ -9,28 +9,33 @@
 
 	<div id="example"></div>
 	<script type="text/jsx">    	
-
+		var count = 1;
 		var HelloComponent = React.createClass({
 			getInitialState: function(){
 				return {
-					title: 'title1',
-					content: 'content1'
+					title: 'title' + count,
+					content: 'content' + count
 				};
 			},
-			componentDidMount: function(){
-				var that = this;
-				setTimeout(function(){
-					that.setState({
-						title:'title2', 
-						content:'content2'
-					});
-				}, 2000);
+			// componentDidMount: function(){
+			// 	var that = this;
+			// 	setTimeout(function(){
+					
+			// 	}, 2000);
+			// },
+			handleClick: function(){
+				count++;
+				this.setState({
+					title:'title' + count, 
+					content:'content' + count
+				});				
 			},
 			render: function(){
 				return (
 					<div>
 						<h1>Title is: {this.state.title}</h1>
 						<p>Content is: {this.state.content}</p>
+						<button onClick={this.handleClick}>Click Me!</button>
 					</div>					
 				);
 			}

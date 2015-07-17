@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>组件定义</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="build/react.js"></script>
+    <script src="build/JSXTransformer.js"></script>
+</head>
+<body>
+
+<div id="example"></div>
+<script type="text/jsx">
+      var HelloComponent = React.createClass({
+			render: function(){
+				return (
+					<div>
+						<h1>组件定义</h1>
+						<p>I am Hello World Component</p>
+					</div>			
+				);
+			}
+		});
+
+      React.render(
+      	<HelloComponent />,
+      	document.getElementById('example')
+      );
+    </script>
+</body>
+</html>
