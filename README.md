@@ -12,4 +12,7 @@
 	<li><a href="fetch-data-from-server.html">从服务端获取数据</a></li>
 	<li><a href="update-if-state-change.html">基于state的组件渲染更新</a></li>
 	<li><a href="work-with-other-library.html">例子：简易markdown编辑器</a></li>
+	<li><a href="react-router-getting-started.html">例子：react router</a></li>
+    <li><a href="server.html">例子：服务端渲染</a></li>
+    <li><a href="flux-started.html">例子：flux</a></li>
 </ul>
