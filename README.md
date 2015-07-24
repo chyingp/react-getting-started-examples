@@ -1,5 +1,27 @@
-# react-getting-started-examples
+# React getting started examples
 
+## 如何运行
+
+1. clone本项目
+
+```
+git clone https://github.com/chyingp/react-getting-started-examples.git
+```
+
+2. 启动服务器
+
+根路径下运行
+
+```
+node app.js
+```
+
+3. 浏览器里访问
+
+http://127.0.0.1:2337
+
+
+## 概览如下
 
 <ul>
 	<li><a href="define-a-component.html">组件定义</a></li>
