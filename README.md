@@ -2,21 +2,19 @@
 
 ## 如何运行
 
-1. clone本项目
+clone本项目
 
 ```
 git clone https://github.com/chyingp/react-getting-started-examples.git
 ```
 
-2. 启动服务器
-
-根路径下运行
+启动服务器，根路径下运行
 
 ```
 node app.js
 ```
 
-3. 浏览器里访问
+浏览器里访问
 
 http://127.0.0.1:2337
 
